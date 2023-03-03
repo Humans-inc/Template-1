@@ -1,0 +1,110 @@
+.custom-modules-wrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 200px;
+}
+@media (max-width: 1024px) {
+  .custom-modules-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 586px) {
+  .custom-modules-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.custom-module {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  background: var(--module-bg);
+  border-radius: 24px;
+  padding: 24px;
+  padding-bottom: 70px;
+  min-height: 210px;
+}
+.custom-module:hover, .custom-module:active, .custom-module:link, .custom-module:visited {
+  text-decoration: none;
+  color: var(--color-module-text);
+}
+.custom-module__number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--color-module-text);
+  display: inline-block;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  background: var(--color-module-number-bg);
+  border-radius: 6px;
+}
+.custom-module__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--color-module-text);
+}
+.custom-module__done {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-done-text);
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding-top: 5px;
+}
+.custom-module__done b {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-module-text);
+  margin-right: 5px;
+  margin-bottom: 3px;
+  display: block;
+}
+.custom-module__done::before {
+  margin-bottom: 1px;
+  display: block;
+  width: 22px;
+  height: 22px;
+  content: "";
+  margin-right: 8px;
+  background: var(--url-done-icon) no-repeat center;
+}
+.custom-module__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--color-module-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-module-button-bg);
+  border-radius: 8px;
+  padding: 12px 16px;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+.custom-module__button::after {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  content: "";
+  background: var(--url-arrow-right) no-repeat center;
+}
