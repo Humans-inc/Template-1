@@ -1,0 +1,121 @@
+.current-lesson {
+  --cl-color-bg: #232325;
+  --cl-color-title: #ffffff;
+  --cl-max-width: 312px;
+  --cl-link-bg: #672de3;
+  --cl-color-link-subtitle: #ffffff;
+  --cl-color-link-title: #ffffff;
+  --cl-color-link-button: #ffffff;
+  --cl-module-bg: #282828;
+  --cl-color-module-subtitle: #787878;
+  --cl-color-module-title: #ffffff;
+  --cl-color-module-button: #ffffff;
+  --cl-url-link-after: url(../accets/cl-arrow-right.svg);
+  background-color: var(--cl-color-bg);
+  padding: 24px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: var(--cl-max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+.current-lesson__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: var(--cl-color-title);
+  margin-bottom: 25px;
+}
+.current-lesson__link {
+  background: var(--cl-link-bg);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  text-decoration: none;
+}
+.current-lesson__link:hover, .current-lesson__link:active, .current-lesson__link:link, .current-lesson__link:visited {
+  text-decoration: none;
+}
+.current-lesson__link-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  color: var(--cl-color-link-subtitle);
+  margin-bottom: 8px;
+}
+.current-lesson__link-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--cl-color-link-title);
+  margin-bottom: 23px;
+}
+.current-lesson__link-button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--cl-color-link-button);
+}
+.current-lesson__link-button::after {
+  display: block;
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background: var(--cl-url-link-after) no-repeat center/contain;
+}
+.current-lesson__module {
+  background: var(--cl-module-bg);
+  border-radius: 16px;
+  padding: 16px;
+  text-decoration: none;
+}
+.current-lesson__module:hover, .current-lesson__module:active, .current-lesson__module:link, .current-lesson__module:visited {
+  text-decoration: none;
+}
+.current-lesson__module-subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: left;
+  color: var(--cl-color-module-subtitle);
+  margin-bottom: 8px;
+}
+.current-lesson__module-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--cl-color-module-title);
+  margin-bottom: 23px;
+}
+.current-lesson__module-button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--cl-color-module-button);
+}
+.current-lesson__module-button::after {
+  display: block;
+  margin-left: 4px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background: var(--cl-url-link-after) no-repeat center/contain;
+}
