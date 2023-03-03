@@ -1,0 +1,57 @@
+.support {
+  --s-bg: #232325 url( ) no-repeat center / cover;
+  --s-color-title: #ffffff;
+  --s-max-width: 236px;
+  --s-color-bage-text: #ffffff;
+  --s-color-bage-bg: #2d8ce3;
+  --s-color-link-text: #2d8ce3;
+  --s-color-link-bg: #ffffff;
+  background: var(--s-bg);
+  padding: 24px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: var(--s-max-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  position: relative;
+}
+.support__bage {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--s-color-bage-text);
+  padding: 6px 10px;
+  background: var(--s-color-bage-bg);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.support__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--s-color-title);
+  margin-bottom: 80px;
+}
+.support__link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--s-color-link-text);
+  width: 100%;
+  padding: 16px;
+  background: var(--s-color-link-bg);
+  border-radius: 8px;
+  text-decoration: none;
+}
+.support__link:hover, .support__link:active, .support__link:link, .support__link:visited {
+  color: var(--s-color-link-text);
+  text-decoration: none;
+}
