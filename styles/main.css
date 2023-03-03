@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --page-bg: #282828;
+  --font-family: sans-serif;
+  /* seasch */
+  --search-bg: #303031;
+  --url-image-bg: url(../accets/icon-search.svg);
+  --color-search-text: #ffffff;
+  --color-search-placeholder: #787878;
+  /* navigation */
+  --color-link-text: #ffffff;
+  --color-hover-link: #434343;
+  --color-all-trainings: #787878;
+  --url-arrow-left: url(../accets/arrow-left-icon.svg);
+  /* trainings */
+  --training-bg: #232325;
+  --color-training-text: #ffffff;
+  --color-state-bg: #672de3;
+  --color-button-not-avaliable: #303031;
+  --color-avaliable: #2c9261;
+  --color-training-description: #787878;
+  --url-lock-icon: url(../accets/icons-lock.svg);
+  --url-arrow-right: url(../accets/arrow-right-icon.svg);
+  /* modules */
+  --module-bg: #232325;
+  --color-module-text: #ffffff;
+  --color-module-number-bg: #303031;
+  --color-done-text: #787878;
+  --color-module-button-bg: #672de3;
+  --url-done-icon: url(../accets/check-icon.svg);
+  /* lessons */
+  --lesson-bg: #232325;
+  --color-lesson-text: #ffffff;
+  --color-lesson-number-bg: #303031;
+  --color-reached: #672de3;
+  --color-not-reached: #434343;
+  --color-need-accomplish: #DA5E5E;
+  --color-answered: #D9A136;
+  --color-accopmlished: #2C9261;
+  min-height: 100vh;
+  background: var(--page-bg);
+}
+
+body * {
+  font-family: var(--font-family);
+}
+
+.custom-container {
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 138px;
+}
+@media (max-width: 1024px) {
+  .custom-container {
+    padding-top: 70px;
+  }
+}
