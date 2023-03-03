@@ -1,0 +1,123 @@
+.custom-lessons-wrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 200px;
+}
+@media (max-width: 1200px) {
+  .custom-lessons-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .custom-lessons-wrap {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.custom-lesson {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  background: var(--lesson-bg);
+  border-radius: 24px;
+  padding: 24px;
+  padding-bottom: 70px;
+  min-height: 210px;
+}
+.custom-lesson.user-state-reached .custom-lesson__button {
+  background: var(--color-reached);
+}
+.custom-lesson.user-state-not_reached {
+  pointer-events: none;
+}
+.custom-lesson.user-state-not_reached .custom-lesson__button {
+  background: var(--color-not-reached);
+}
+.custom-lesson.user-state-need_accomplish .custom-lesson__button {
+  background: var(--color-need-accomplish);
+}
+.custom-lesson.user-state-has_mission .custom-lesson__button {
+  background: var(--color-reached);
+}
+.custom-lesson.user-state-answered .custom-lesson__button {
+  background: var(--color-answered);
+}
+.custom-lesson.user-state-accomplished .custom-lesson__button {
+  background: var(--color-accopmlished);
+}
+.custom-lesson:hover, .custom-lesson:active, .custom-lesson:link, .custom-lesson:visited {
+  text-decoration: none;
+  color: var(--color-lesson-text);
+}
+.custom-lesson__number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: var(--color-lesson-text);
+  display: inline-block;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  background: var(--color-lesson-number-bg);
+  border-radius: 6px;
+}
+.custom-lesson__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--color-lesson-text);
+}
+.custom-lesson__state {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--color-lesson-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 12px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
+@media (max-width: 586px) {
+  .custom-lesson__state {
+    padding: 6px;
+    left: auto;
+    bottom: auto;
+    top: 24px;
+    right: 24px;
+  }
+}
+.custom-lesson__button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: var(--color-module-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 12px 16px;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+}
+.custom-lesson__button::after {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  content: "";
+  background: var(--url-arrow-right) no-repeat center;
+}
