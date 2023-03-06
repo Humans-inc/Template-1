@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
 
       let scales = html.querySelectorAll('#module-progress tbody tr');
-      let scaleName = 'Модуль';
+
+      let scaleName = module.title;
 
       if (scales.length >= 1) {
         scales.forEach((item) => {
