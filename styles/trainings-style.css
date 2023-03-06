@@ -1,4 +1,7 @@
 /* styles for native trainings */
+.xdget-trainingList .stream-table {
+    margin-left: 0px;
+}
 .stream-table tbody tr td {
 	padding: 0;
 }
