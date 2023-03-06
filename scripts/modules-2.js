@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <span class="custom-module__done"><b>${userLessons}</b>&nbsp;/ ${allLessons}</span>
         <span class="custom-module__button">Перейти</span>
       `;
+      if (allLessons == 0) newModule.querySelector('.custom-module__done').style.display = 'none';
       modulesCustom.append(newModule);
     }
   }
