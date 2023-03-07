@@ -1,0 +1,138 @@
+
+body {
+  --page-bg: #282828;
+  --font-family: sans-serif;
+  /* trainings */
+  --training-bg: #232325;
+  --color-training-text: #ffffff;
+  --color-state-bg: #672de3;
+  --color-button-not-avaliable: #303031;
+  --color-avaliable: #2c9261;
+  --color-training-description: #787878;
+  --url-lock-icon: url(https://fs.getcourse.ru/fileservice/file/download/a/600892/sc/304/h/5ae4a8314f9b46384fea517ffa586dfc.svg);
+  --url-arrow-right: url(https://fs.getcourse.ru/fileservice/file/download/a/600892/sc/271/h/6ad5f1ec00171855ccbcd80161c66abd.svg);
+  min-height: 100vh;
+  background: var(--page-bg);
+}
+
+/* styles for native trainings */
+
+.stream-table tbody tr {
+	padding: 0;
+    width: 100%;
+    display: block;
+}
+.stream-table tbody tr td {
+	padding: 0;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.xdget-trainingList .stream-table,
+.xdget-trainingList .stream-table tbody {
+	display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 694px;
+    margin: 0px auto;
+}
+.stream-table tbody tr td:hover {
+    background: transparent;
+}
+.stream-table tbody tr a {
+    width: 100%;
+    min-height: 210px;
+    background: var(--training-bg);
+    border-radius: 24px;
+    padding: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: var(--color-training-text);
+    margin: 0px auto 14px;
+    max-width: 694px;
+}
+.stream-table a .stream-title {
+    max-width: 65%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    /*margin-top: 40px;*/
+    margin-bottom: 8px;
+    color: var(--color-training-text);
+}
+.stream-table tbody tr a b {
+    max-width: 65%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-training-description);
+}
+
+.noaccess-mode-show .custom-training__state {
+  background: var(--color-button-not-avaliable);
+  opacity: 0.4;
+}
+.noaccess-mode-show .custom-training__title,
+.noaccess-mode-show .custom-training__description {
+  opacity: 0.4;
+}
+.noaccess-mode-show .custom-training__button {
+  background: var(--color-button-not-avaliable);
+  width: 156px;
+}
+.noaccess-mode-show .custom-training__lock {
+  position: absolute;
+  bottom: 25px;
+  right: 184px;
+  width: 40px;
+  height: 40px;
+  background: var(--color-state-bg) var(--url-lock-icon) no-repeat center;
+  border-radius: 80px;
+}
+.custom-training__state {
+  display: inline-block;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  background: var(--color-avaliable);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+}
+.custom-training__button {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px;
+  background: var(--color-state-bg);
+  border-radius: 8px;
+}
+.custom-training__button::after {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  content: "";
+  background: var(--url-arrow-right) no-repeat center;
+}
+@media (max-width: 768px) {
+  .stream-table a .stream-title {
+    max-width: none;
+  }
+  .stream-table tbody tr a b {
+    max-width: none;
+  }
+  .stream-table tbody tr a {
+    padding-bottom: 75px;
+  }
+}
