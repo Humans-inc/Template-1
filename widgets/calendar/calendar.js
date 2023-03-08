@@ -57,6 +57,10 @@ const setMonthCalendar = (year, month) => {
   let dataMonth = month + 1;
 
   for (let i = 1; i <= monthDays; i++) {
+    
+    monthDaysText +=
+        `<li class="calendar__date" data-day="${i}" data-month="${dataMonth}">` + i + '</li>';
+    /*
     if (i < 10) {
       monthDaysText +=
         `<li class="calendar__date" data-day="0${i}" data-month="${dataMonth}">` + i + '</li>';
@@ -64,6 +68,7 @@ const setMonthCalendar = (year, month) => {
       monthDaysText +=
         `<li class="calendar__date" data-day="${i}" data-month="${dataMonth}">` + i + '</li>';
     }
+    */
   }
 
   daysContainer.innerHTML = monthDaysText;
